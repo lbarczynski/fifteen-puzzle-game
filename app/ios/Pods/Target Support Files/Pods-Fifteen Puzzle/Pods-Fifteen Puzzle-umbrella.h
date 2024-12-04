@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_iosVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_iosVersionString[];
+FOUNDATION_EXPORT double Pods_Fifteen_PuzzleVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Fifteen_PuzzleVersionString[];
 

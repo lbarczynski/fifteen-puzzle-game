@@ -1,4 +1,4 @@
-target 'ios' do
+target 'Fifteen Puzzle' do
   use_frameworks!
   platform :ios, '16.0'
   pod 'shared', :path => '../shared'
