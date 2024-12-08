@@ -21,8 +21,12 @@ allprojects {
 
         detekt {
             buildUponDefaultConfig = true
-            autoCorrect = false
+            autoCorrect = true
             config.from("$rootDir/config/detekt.yaml")
+        }
+
+        dependencies {
+            detektPlugins(libs.detekt.plugins.formatting)
         }
 
         tasks.withType<Detekt>().configureEach {
@@ -33,5 +37,8 @@ allprojects {
 
 tasks.register<Detekt>("detektAll") {
     parallel = true
+    autoCorrect = true
+    buildUponDefaultConfig = true
+    config.from("$rootDir/config/detekt.yaml")
     setSource(files(rootProject.projectDir))
 }
