@@ -1,9 +1,12 @@
 package dev.bapps.fifteenpuzzle
 
+import dev.bapps.fifteenpuzzle.game.api.GameApi
+
 class Greeting {
     private val platform: Platform = getPlatform()
 
     fun greet(): String {
-        return "Hello World, Platform: ${platform.name}!"
+        val gameApi = GameApi()
+        return "Hello World, Platform: ${platform.name}! + ${gameApi.helloWorld()}"
     }
 }

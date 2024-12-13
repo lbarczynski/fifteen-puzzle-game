@@ -18,3 +18,4 @@ rootProject.name = "fifteen-puzzle-game"
 
 include(":app:android")
 include(":app:shared")
+include(":game:api")
