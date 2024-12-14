@@ -16,6 +16,10 @@ dependencyResolutionManagement {
 
 rootProject.name = "fifteen-puzzle-game"
 
+include(
+    ":game:api",
+    ":game:engine"
+)
+
 include(":app:android")
 include(":app:shared")
-include(":game:api")

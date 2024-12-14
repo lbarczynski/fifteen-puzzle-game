@@ -8,7 +8,6 @@ interface Board {
 
     fun canMove(direction: Direction): Boolean
     fun move(direction: Direction)
-    fun isSolved(): Boolean
     fun copy(): Board
 }
 
