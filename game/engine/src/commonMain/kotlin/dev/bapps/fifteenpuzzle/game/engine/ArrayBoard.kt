@@ -3,10 +3,15 @@ package dev.bapps.fifteenpuzzle.game.engine
 import dev.bapps.fifteenpuzzle.game.api.Board
 import dev.bapps.fifteenpuzzle.game.api.Direction
 
-internal class ArrayBoard(
+internal class ArrayBoard private constructor(
     private val board: Array<IntArray>,
-    private var emptySlot: Pair<Int, Int> = findZero(board)
+    private var emptySlot: Pair<Int, Int>
 ) : Board {
+
+    constructor(board: Array<IntArray>) : this(
+        board = board,
+        emptySlot = findZero(board)
+    )
 
     override val rows: Int = board.size
     override val columns: Int = board.first().size
@@ -37,8 +42,8 @@ internal class ArrayBoard(
     }
 
     override fun copy(): Board = ArrayBoard(
-        Array(rows) { i -> board[i].copyOf() },
-        emptySlot.copy()
+        board = Array(rows) { i -> board[i].copyOf() },
+        emptySlot = emptySlot.copy()
     )
 
     private fun swap(source: Pair<Int, Int>, destination: Pair<Int, Int>) {
