@@ -1,4 +1,4 @@
-package dev.bapps.fifteenpuzzle.game.engine
+package dev.bapps.fifteenpuzzle.game.engine.board
 
 import dev.bapps.fifteenpuzzle.game.api.Board
 import dev.mokkery.answering.calls
