@@ -6,11 +6,7 @@ internal interface BoardPreVerifier {
     fun isSolvable(board: Board): Boolean
 }
 
-internal interface BoardSolutionVerifier {
-    fun isSolved(board: Board): Boolean
-}
-
-internal class BoardVerifier : BoardPreVerifier, BoardSolutionVerifier {
+internal class BoardVerifier : BoardPreVerifier {
 
     /*
         Verify if board is solvable
@@ -45,20 +41,5 @@ internal class BoardVerifier : BoardPreVerifier, BoardSolutionVerifier {
                 add(board[row, column])
             }
         }
-    }
-
-    override fun isSolved(board: Board): Boolean {
-        val maxValue = board.rows * board.columns
-        var expectedValue = 1
-        for (row in 0 until board.rows) {
-            for (column in 0 until board.columns) {
-                if (board[row, column] != expectedValue % maxValue) {
-                    return false
-                }
-                ++expectedValue
-            }
-        }
-
-        return true
     }
 }
