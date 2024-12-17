@@ -3,6 +3,10 @@ package dev.bapps.fifteenpuzzle.game.engine
 import dev.bapps.fifteenpuzzle.game.api.Board
 import dev.bapps.fifteenpuzzle.game.api.Direction
 import dev.bapps.fifteenpuzzle.game.api.Game
+import dev.bapps.fifteenpuzzle.game.engine.board.ArrayBoardGenerator
+import dev.bapps.fifteenpuzzle.game.engine.board.BoardGenerator
+import dev.bapps.fifteenpuzzle.game.engine.board.BoardPreVerifier
+import dev.bapps.fifteenpuzzle.game.engine.board.BoardVerifier
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -23,5 +27,25 @@ class FifteenPuzzleGame internal constructor(initialBoardState: Board) : Game {
             .apply { move(direction) }
         internalBoard.emit(updatedState)
         return true
+    }
+
+    class Generator internal constructor(
+        private val boardGenerator: BoardGenerator,
+        private val boardPreVerifier: BoardPreVerifier
+    ) : Game.Generator {
+
+        constructor() : this(
+            boardGenerator = ArrayBoardGenerator(),
+            boardPreVerifier = BoardVerifier()
+        )
+
+        override fun createNewGame(rows: Int, columns: Int): Game {
+            while (true) {
+                val board = boardGenerator.random(rows, columns)
+                if (boardPreVerifier.isSolvable(board)) {
+                    return FifteenPuzzleGame(board)
+                }
+            }
+        }
     }
 }
