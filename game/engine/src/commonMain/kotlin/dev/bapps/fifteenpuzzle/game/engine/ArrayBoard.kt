@@ -41,6 +41,21 @@ internal class ArrayBoard private constructor(
         emptySlot = destination
     }
 
+    override fun isSolved(): Boolean {
+        val maxValue = rows * columns
+        var expectedValue = 1
+        for (row in 0 until rows) {
+            for (column in 0 until columns) {
+                if (this[row, column] != expectedValue % maxValue) {
+                    return false
+                }
+                ++expectedValue
+            }
+        }
+
+        return true
+    }
+
     override fun copy(): Board = ArrayBoard(
         board = Array(rows) { i -> board[i].copyOf() },
         emptySlot = emptySlot.copy()
