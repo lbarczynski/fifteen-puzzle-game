@@ -7,7 +7,8 @@ internal interface BoardGenerator {
     fun random(rows: Int, columns: Int): Board
 }
 
-internal class ArrayBoardGenerator(
+internal class TypedBoardGenerator(
+    private val boardFactory: BoardFactory,
     private val random: Random = Random.Default
 ) : BoardGenerator {
 
@@ -25,6 +26,6 @@ internal class ArrayBoardGenerator(
             }
         }
 
-        return ArrayBoard(board)
+        return boardFactory.createBoard(board)
     }
 }
