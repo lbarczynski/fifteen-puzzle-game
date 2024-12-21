@@ -3,10 +3,11 @@ package dev.bapps.fifteenpuzzle.game.engine
 import dev.bapps.fifteenpuzzle.game.api.Board
 import dev.bapps.fifteenpuzzle.game.api.Direction
 import dev.bapps.fifteenpuzzle.game.api.Game
-import dev.bapps.fifteenpuzzle.game.engine.board.ArrayBoardGenerator
 import dev.bapps.fifteenpuzzle.game.engine.board.BoardGenerator
 import dev.bapps.fifteenpuzzle.game.engine.board.BoardPreVerifier
 import dev.bapps.fifteenpuzzle.game.engine.board.BoardVerifier
+import dev.bapps.fifteenpuzzle.game.engine.board.StringBoardFactory
+import dev.bapps.fifteenpuzzle.game.engine.board.TypedBoardGenerator
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -35,7 +36,7 @@ class FifteenPuzzleGame internal constructor(initialBoardState: Board) : Game {
     ) : Game.Generator {
 
         constructor() : this(
-            boardGenerator = ArrayBoardGenerator(),
+            boardGenerator = TypedBoardGenerator(StringBoardFactory()),
             boardPreVerifier = BoardVerifier()
         )
 
