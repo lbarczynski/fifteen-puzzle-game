@@ -17,6 +17,10 @@ dependencyResolutionManagement {
 rootProject.name = "fifteen-puzzle-game"
 
 include(
+    ":core:compose"
+)
+
+include(
     ":game:api",
     ":game:engine",
     ":game:ui",

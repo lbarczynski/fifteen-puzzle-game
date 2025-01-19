@@ -21,12 +21,12 @@
 
 /* Begin PBXBuildFile section */
 		0D53CA2C0BB559339B6D35B47A7C02E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		BEE3B5D5DFBEE5300F214464B9601427 /* Pods-Fifteen Puzzle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E256177E8DC90AAE79DB4A380BBF6308 /* Pods-Fifteen Puzzle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0F0D6B94F5FB72E81290E5C1BBCFD82 /* Pods-Fifteen Puzzle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B96EFB361EA712AD786883E32EEFCC36 /* Pods-Fifteen Puzzle-dummy.m */; };
+		BEE3B5D5DFBEE5300F214464B9601427 /* Pods-Fifteen Puzzle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B1E0A7B8E6686BBD54B83AC3CA175E2 /* Pods-Fifteen Puzzle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0F0D6B94F5FB72E81290E5C1BBCFD82 /* Pods-Fifteen Puzzle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABFE8B9AAA293B552F68CB7AE408E24 /* Pods-Fifteen Puzzle-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		741F56BD4B779A1841463020475BB0E3 /* PBXContainerItemProxy */ = {
+		D1BD097B5F654ACF0CAA0623C108CBAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -36,21 +36,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03E6B932DB1F167CA5C4BD7395427F20 /* Pods-Fifteen Puzzle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fifteen Puzzle.release.xcconfig"; sourceTree = "<group>"; };
-		1A04FCC04C023454B15B38386FB3A2E0 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = build/cocoapods/framework/shared.framework; sourceTree = "<group>"; };
+		04493DFE7E2A478D4E5013386D685AB3 /* compose-resources */ = {isa = PBXFileReference; includeInIndex = 1; name = "compose-resources"; path = "build/compose/cocoapods/compose-resources"; sourceTree = "<group>"; };
+		0BC5AE4B6A0AE2E22B43D4C114584313 /* shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.debug.xcconfig; sourceTree = "<group>"; };
+		13F3FA30844674CDDA6812F81BD8E1FA /* shared.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = shared.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		228E58A9E2B79B569D928E468DD9D4C0 /* Pods-Fifteen Puzzle */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Fifteen Puzzle"; path = Pods_Fifteen_Puzzle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		231266188E75BC93C3B59B8A3918EB6F /* Pods-Fifteen Puzzle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Fifteen Puzzle.modulemap"; sourceTree = "<group>"; };
+		22B69251D41B5E26A3A76B04C5C0126F /* Pods-Fifteen Puzzle-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fifteen Puzzle-acknowledgements.plist"; sourceTree = "<group>"; };
+		297A6085F3B3D6EE0417B1268B535376 /* Pods-Fifteen Puzzle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fifteen Puzzle.release.xcconfig"; sourceTree = "<group>"; };
+		2B1E0A7B8E6686BBD54B83AC3CA175E2 /* Pods-Fifteen Puzzle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Fifteen Puzzle-umbrella.h"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4055FF7A5036EE4EB0F2474E5FB4E4C1 /* shared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.release.xcconfig; sourceTree = "<group>"; };
-		6ACCF0055D5A652DF0ACDE9192FB9A2B /* Pods-Fifteen Puzzle-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Fifteen Puzzle-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6B7A3EEDE48595B23115C69DB8266BD4 /* Pods-Fifteen Puzzle-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fifteen Puzzle-Info.plist"; sourceTree = "<group>"; };
-		78E4C8EE44644CEC036762A44628C714 /* shared.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = shared.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9999CE5DB59F28D3E11411ACAD3FDB6A /* Pods-Fifteen Puzzle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fifteen Puzzle.debug.xcconfig"; sourceTree = "<group>"; };
+		3ABFE8B9AAA293B552F68CB7AE408E24 /* Pods-Fifteen Puzzle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Fifteen Puzzle-dummy.m"; sourceTree = "<group>"; };
+		4C34512EB583C9C2C01D2D7C232F0575 /* shared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.release.xcconfig; sourceTree = "<group>"; };
+		6A9FE5D6BE6E1E9B48D0B5F61FEC1A85 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = build/cocoapods/framework/shared.framework; sourceTree = "<group>"; };
+		73E42673DE7ABA7DC088D62409E895ED /* Pods-Fifteen Puzzle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Fifteen Puzzle.debug.xcconfig"; sourceTree = "<group>"; };
+		80A814376CD5CCCC4CFCC10DAA0FC194 /* Pods-Fifteen Puzzle-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Fifteen Puzzle-resources.sh"; sourceTree = "<group>"; };
+		82FA9E47BA22A6D2D89526B791C434FA /* Pods-Fifteen Puzzle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Fifteen Puzzle.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B96EFB361EA712AD786883E32EEFCC36 /* Pods-Fifteen Puzzle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Fifteen Puzzle-dummy.m"; sourceTree = "<group>"; };
-		BECF2EA1D7EA95CF1B891922B0EC8854 /* shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.debug.xcconfig; sourceTree = "<group>"; };
-		C808AA2A22918A16E57289BECE7C77A2 /* Pods-Fifteen Puzzle-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fifteen Puzzle-acknowledgements.plist"; sourceTree = "<group>"; };
-		E256177E8DC90AAE79DB4A380BBF6308 /* Pods-Fifteen Puzzle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Fifteen Puzzle-umbrella.h"; sourceTree = "<group>"; };
+		DB148C2F805DB3EF65ABD68F145E3451 /* Pods-Fifteen Puzzle-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Fifteen Puzzle-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FB59FC382B467D7DFF4A20DC0E1D355B /* Pods-Fifteen Puzzle-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Fifteen Puzzle-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,65 +75,78 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		313FE5FE915A4A924C55AAC02A910D61 /* Development Pods */ = {
+		2BFD53026FC91569CF9A5BB6BEF579B5 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				F2F59B8AE33A942EE4A5586105F350CF /* shared */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		4480D38118C1C1DEAAD906A3DF39C827 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				673E9BA209211FB2EC4D9954ABDDC465 /* Pods-Fifteen Puzzle */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		673E9BA209211FB2EC4D9954ABDDC465 /* Pods-Fifteen Puzzle */ = {
-			isa = PBXGroup;
-			children = (
-				231266188E75BC93C3B59B8A3918EB6F /* Pods-Fifteen Puzzle.modulemap */,
-				6ACCF0055D5A652DF0ACDE9192FB9A2B /* Pods-Fifteen Puzzle-acknowledgements.markdown */,
-				C808AA2A22918A16E57289BECE7C77A2 /* Pods-Fifteen Puzzle-acknowledgements.plist */,
-				B96EFB361EA712AD786883E32EEFCC36 /* Pods-Fifteen Puzzle-dummy.m */,
-				6B7A3EEDE48595B23115C69DB8266BD4 /* Pods-Fifteen Puzzle-Info.plist */,
-				E256177E8DC90AAE79DB4A380BBF6308 /* Pods-Fifteen Puzzle-umbrella.h */,
-				9999CE5DB59F28D3E11411ACAD3FDB6A /* Pods-Fifteen Puzzle.debug.xcconfig */,
-				03E6B932DB1F167CA5C4BD7395427F20 /* Pods-Fifteen Puzzle.release.xcconfig */,
-			);
-			name = "Pods-Fifteen Puzzle";
-			path = "Target Support Files/Pods-Fifteen Puzzle";
-			sourceTree = "<group>";
-		};
-		83636031188B07840C60C0A0815E46D4 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				78E4C8EE44644CEC036762A44628C714 /* shared.podspec */,
+				13F3FA30844674CDDA6812F81BD8E1FA /* shared.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		916F7649068E579A25EBF783AFDA189E /* Support Files */ = {
+		58AAD176B64323B9974E5B70EC8B12DC /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BECF2EA1D7EA95CF1B891922B0EC8854 /* shared.debug.xcconfig */,
-				4055FF7A5036EE4EB0F2474E5FB4E4C1 /* shared.release.xcconfig */,
+				CF8E84430645B10EA608E5BF094414C7 /* shared */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		84A8EB44181473853D5079036FE0AFC4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BC5AE4B6A0AE2E22B43D4C114584313 /* shared.debug.xcconfig */,
+				4C34512EB583C9C2C01D2D7C232F0575 /* shared.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../ios/Pods/Target Support Files/shared";
+			sourceTree = "<group>";
+		};
+		9DF0F80E240F1788E4EB283E66713863 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7176F7DFF12CD4BA340532371A6B116 /* Pods-Fifteen Puzzle */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A7176F7DFF12CD4BA340532371A6B116 /* Pods-Fifteen Puzzle */ = {
+			isa = PBXGroup;
+			children = (
+				82FA9E47BA22A6D2D89526B791C434FA /* Pods-Fifteen Puzzle.modulemap */,
+				DB148C2F805DB3EF65ABD68F145E3451 /* Pods-Fifteen Puzzle-acknowledgements.markdown */,
+				22B69251D41B5E26A3A76B04C5C0126F /* Pods-Fifteen Puzzle-acknowledgements.plist */,
+				3ABFE8B9AAA293B552F68CB7AE408E24 /* Pods-Fifteen Puzzle-dummy.m */,
+				FB59FC382B467D7DFF4A20DC0E1D355B /* Pods-Fifteen Puzzle-Info.plist */,
+				80A814376CD5CCCC4CFCC10DAA0FC194 /* Pods-Fifteen Puzzle-resources.sh */,
+				2B1E0A7B8E6686BBD54B83AC3CA175E2 /* Pods-Fifteen Puzzle-umbrella.h */,
+				73E42673DE7ABA7DC088D62409E895ED /* Pods-Fifteen Puzzle.debug.xcconfig */,
+				297A6085F3B3D6EE0417B1268B535376 /* Pods-Fifteen Puzzle.release.xcconfig */,
+			);
+			name = "Pods-Fifteen Puzzle";
+			path = "Target Support Files/Pods-Fifteen Puzzle";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				313FE5FE915A4A924C55AAC02A910D61 /* Development Pods */,
+				58AAD176B64323B9974E5B70EC8B12DC /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				00DE433C43C3EA594F2592715BC20595 /* Products */,
-				4480D38118C1C1DEAAD906A3DF39C827 /* Targets Support Files */,
+				9DF0F80E240F1788E4EB283E66713863 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		CF8E84430645B10EA608E5BF094414C7 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				04493DFE7E2A478D4E5013386D685AB3 /* compose-resources */,
+				FDB7D0287755A7A13505E8A7BD4345B9 /* Frameworks */,
+				2BFD53026FC91569CF9A5BB6BEF579B5 /* Pod */,
+				84A8EB44181473853D5079036FE0AFC4 /* Support Files */,
+			);
+			name = shared;
+			path = ../../shared;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -150,21 +165,10 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F2F59B8AE33A942EE4A5586105F350CF /* shared */ = {
+		FDB7D0287755A7A13505E8A7BD4345B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FE3B536FB512E3DCB21DB1E76145B8A8 /* Frameworks */,
-				83636031188B07840C60C0A0815E46D4 /* Pod */,
-				916F7649068E579A25EBF783AFDA189E /* Support Files */,
-			);
-			name = shared;
-			path = ../../shared;
-			sourceTree = "<group>";
-		};
-		FE3B536FB512E3DCB21DB1E76145B8A8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1A04FCC04C023454B15B38386FB3A2E0 /* shared.framework */,
+				6A9FE5D6BE6E1E9B48D0B5F61FEC1A85 /* shared.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,7 +199,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DEF21A9BF585A707E35608D0BF7E8B5F /* PBXTargetDependency */,
+				34C71AC82019600740582EEBFD5A4E80 /* PBXTargetDependency */,
 			);
 			name = "Pods-Fifteen Puzzle";
 			productName = Pods_Fifteen_Puzzle;
@@ -267,18 +271,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DEF21A9BF585A707E35608D0BF7E8B5F /* PBXTargetDependency */ = {
+		34C71AC82019600740582EEBFD5A4E80 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = shared;
 			target = 8777C9F6889E59EFFD631D80AEE9048B /* shared */;
-			targetProxy = 741F56BD4B779A1841463020475BB0E3 /* PBXContainerItemProxy */;
+			targetProxy = D1BD097B5F654ACF0CAA0623C108CBAE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1B324F23A38A788388E2955EC79D8D3A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BECF2EA1D7EA95CF1B891922B0EC8854 /* shared.debug.xcconfig */;
+			baseConfigurationReference = 0BC5AE4B6A0AE2E22B43D4C114584313 /* shared.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -358,7 +362,7 @@
 		};
 		5F996D1D51446D488A21137EB32E47B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9999CE5DB59F28D3E11411ACAD3FDB6A /* Pods-Fifteen Puzzle.debug.xcconfig */;
+			baseConfigurationReference = 73E42673DE7ABA7DC088D62409E895ED /* Pods-Fifteen Puzzle.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -397,7 +401,7 @@
 		};
 		68BBB6BE365B8CFAE42A374D84F6DF58 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4055FF7A5036EE4EB0F2474E5FB4E4C1 /* shared.release.xcconfig */;
+			baseConfigurationReference = 4C34512EB583C9C2C01D2D7C232F0575 /* shared.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -416,7 +420,7 @@
 		};
 		D4B95818DB82802D52F255AED21AC29A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03E6B932DB1F167CA5C4BD7395427F20 /* Pods-Fifteen Puzzle.release.xcconfig */;
+			baseConfigurationReference = 297A6085F3B3D6EE0417B1268B535376 /* Pods-Fifteen Puzzle.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
