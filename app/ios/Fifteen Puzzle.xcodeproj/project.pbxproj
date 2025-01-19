@@ -108,6 +108,7 @@
 				7555FF77242A565900829871 /* Sources */,
 				7555FF79242A565900829871 /* Resources */,
 				6FFCD37D1CE56B4E7150A7AE /* Frameworks */,
+				9060571BA471D692A6EB56CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,6 +165,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9060571BA471D692A6EB56CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fifteen Puzzle/Pods-Fifteen Puzzle-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fifteen Puzzle/Pods-Fifteen Puzzle-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fifteen Puzzle/Pods-Fifteen Puzzle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9D20FF5D3D34AAEE0ABE233A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
